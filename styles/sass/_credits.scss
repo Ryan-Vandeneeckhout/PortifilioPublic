@@ -1,0 +1,19 @@
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+}
+
+.credit {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 20px;
+    font-family: $fontBodyType;
+    color: white;
+  }
+}

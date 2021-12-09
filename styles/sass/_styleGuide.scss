@@ -1,0 +1,22 @@
+/*Style Guide Content Measurements Begin */
+
+$fontLarge: 138px;
+$fontMedium: 80px;
+$fontMedium2: 42px;
+$fontMedium3: 32px;
+$fontSmall: 20px;
+$fontForm: 26px;
+
+$fontHeadingType: Raleway, Arial, Helvetica, sans-serif;
+$fontBodyType: Raleway, Arial, Helvetica, sans-serif;
+
+@font-face {
+  font-family: "Snowny";
+  src: url("../../assets/fonts/SnowySeasonRegular.woff2") format("woff2"),
+    url("../../assets/fonts/SnowySeasonRegular.woff") format("woff");
+}
+
+h2 {
+  font-family: $fontHeadingType;
+  text-transform: uppercase;
+}

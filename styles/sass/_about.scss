@@ -1,0 +1,68 @@
+.about {
+  width: 100%;
+  height: 100%;
+  padding: 13% 2%;
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.aboutWrapper {
+  padding: 0 5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutParagraph {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+
+  a {
+    color: goldenrod;
+    text-decoration: none;
+  }
+
+  a:link {
+    color: goldenrod;
+  }
+  a:hover {
+    color: green;
+  }
+  a:visited {
+    color: lightblue;
+  }
+
+  .BoxTitle {
+    min-width: 450px;
+    max-width: 450px;
+    max-height: 450px;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid goldenrod 40px;
+    background-color: white;
+    h2 {
+      font-size: 180px;
+      -webkit-text-stroke-width: 4px;
+      -webkit-text-stroke-color: black;
+      stroke: black;
+      color: goldenrod;
+    }
+  }
+  p {
+    line-height: 30px;
+    margin-left: 70px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: $fontBodyType;
+  }
+}
+h2 {
+  font-size: 68px;
+}
