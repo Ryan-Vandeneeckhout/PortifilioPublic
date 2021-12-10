@@ -764,8 +764,8 @@ h2 {
 .skillsDev ul li:hover {
   color: goldenrod;
   cursor: pointer;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .skillsDev ul p {
   font-size: 28px;
