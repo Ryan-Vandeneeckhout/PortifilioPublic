@@ -6,6 +6,13 @@ const titleWebsite = document.querySelector("#titleContainer");
 const NavButtonIconChanger = document.querySelector("#navButtonIcon")
 let count = "";
 
+const scrollupClick = document.querySelector(".scrollup");
+
+scrollupClick.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
 navButtonClick.addEventListener("click", function () {
   navOpen.classList.toggle("opened");
   navOpen.classList.toggle("closed");
@@ -32,7 +39,10 @@ themeButton.addEventListener("click", function () {
 });
 
 $(document).ready(function () {
-
+  
+  $('.imagepreview').load("https://projectglamour.netlify.app/index.html", function () {
+    alert("Showing a nice message after loading has finished.");
+  });
 
   $('.submit').click(function (event) {    
 

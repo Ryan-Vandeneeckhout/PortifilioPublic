@@ -1,13 +1,13 @@
 .about {
   width: 100%;
   height: 100%;
-  padding: 13% 2%;
+  padding: 13% 0;
   background-color: #4d4d4d;
   color: white;
 }
 
 .aboutWrapper {
-  padding: 0 5%;
+  padding: 0 clamp(2rem, 1.1351rem + 4.3243vw, 6rem);
   width: 100%;
   height: 100%;
   display: flex;
@@ -17,7 +17,7 @@
 
 .aboutParagraph {
   text-align: center;
-  font-size: 24px;
+  font-size: clamp(1rem, 0.8919rem + 0.5405vw, 1.5rem);
   letter-spacing: 1px;
   display: flex;
   flex-direction: row;
@@ -38,10 +38,10 @@
   }
 
   .BoxTitle {
-    min-width: 450px;
-    max-width: 450px;
-    max-height: 450px;
-    min-height: 450px;
+    min-width: clamp(19rem, 16.9459rem + 10.2703vw, 28.5rem);
+    max-width: clamp(19rem, 16.9459rem + 10.2703vw, 28.5rem);
+    max-height: clamp(19rem, 16.9459rem + 10.2703vw, 28.5rem);
+    min-height: clamp(19rem, 16.9459rem + 10.2703vw, 28.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,5 +64,19 @@
   }
 }
 h2 {
-  font-size: 68px;
+  font-size: clamp(1.5rem, 1.0676rem + 2.1622vw, 3.5rem);
+}
+@media only screen and (max-width: 1325px) {
+  .aboutParagraph .BoxTitle {
+    display: none;
+  }
+
+  .aboutParagraph p {
+    margin: 0;
+    padding: 30px 70px;
+  }
+
+  .aboutWrapper {
+    padding: 0;
+  }
 }

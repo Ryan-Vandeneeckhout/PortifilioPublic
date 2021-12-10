@@ -1,7 +1,7 @@
 /*Style Guide Content Measurements Begin */
 
 $fontLarge: 138px;
-$fontMedium: 80px;
+$fontMedium: clamp(2rem, 1.4595rem + 2.7027vw, 4.5rem);
 $fontMedium2: 42px;
 $fontMedium3: 32px;
 $fontSmall: 20px;

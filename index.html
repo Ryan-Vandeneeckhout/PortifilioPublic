@@ -36,7 +36,7 @@
         </nav>
         <nav class="NavBar closed" id="closed">
             <ul>
-                <li><a>About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a>Skills</a></li>
                 <li><a>Projects</a></li>
                 <li><a>Contact</a></li>
@@ -45,8 +45,13 @@
         </nav>
         <div class="titleContainer opened" id="titleContainer">
             <h1>Ryan Van Den Eeckhout</h1>
+            <h2>Front-End Web Developer</h2>
+        </div>
+        <div class="bottomHeader">
+            <div class = "scrolldown"><i class="fas fa-angle-down"></i></div> 
         </div>
       </div>
+      
   </header>
   <main>
       <section id="about" class="about">
@@ -141,10 +146,10 @@
               <div class="titleHolderH2"><h2>Projects</h2></div>
               <div class="projectLists">
                   <div class="project1">
-                    <img src="https://via.placeholder.com/150" alt="Girl in a jacket">
+                    <img src="./assets/images/macbook-pro-mockup-featuring-a-woman-using-her-computer-2331-el1.png" alt="Picture of Website ImperialGlamour on a Macbook Laptop">
                       <div class="projectPara">
                         <h3>Imperial Glamour</h3>
-                        <h4>Project Live <a href=>Link</a></h4>
+                        <h4>Project Live <a href=https://projectglamour.netlify.app/index.html>Link</a></h4>
                         <p>A project that integrates the use of a Rest API along with Canvas and form elements that display a visually appealing store mockup.</p>
                         <h4>Github - <a href=>View Repo</a></h4>
                         <h5>Created Using Sass  <span class="char1">/</span> Javascript  <span class="char1">/</span> Jquery <span class="char1">/</span> HTML5 and CSS3</h5>
@@ -163,7 +168,7 @@
                 <div class="project1">
                     <img src="https://via.placeholder.com/150" alt="Girl in a jacket">
                     <div class="projectPara">
-                        <h3>3-Page PSD Client Conversion</h3>
+                        <h3>Three-Page PSD Client Conversion</h3>
                         <h4>Project Live <a href=>Link</a></h4>
                         <p>A project that integrates the use of a Rest API along with Canvas and form elements that display a visually appealing store mockup.</p>
                         <h4>Github - <a href=https://github.com/Ryan-Vandeneeckhout/Captured-Project-One-Repo.git>View Repo</a></h4>
@@ -184,13 +189,10 @@
             <div class="formContainer">
                 <form action="https://formspree.io/f/mjvlvgad" method="POST">
 
-                    <label for="Email">Email:</label>
                     <input type="email" id="Email" class="email" name="email" placeholder="Your email..">
         
-                    <label for="subject">Subject:</label>
                     <input type="text" id="subject" class="subject" name="subject" placeholder="Subject..">
                    
-                    <label for="message">Message:</label>
                     <textarea id="message" name="message" class="message" placeholder="Write something.."></textarea>
                     <div class="status"></div>
                     <input type="submit" class="submit" value="Submit">
@@ -198,6 +200,7 @@
             </div>
         </div>
       </section>
+      <div class = "scrollup"><i class="fas fa-angle-up"></i></div> 
   </main>
   <footer>
     <div class="credit">

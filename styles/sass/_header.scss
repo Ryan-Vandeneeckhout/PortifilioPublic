@@ -93,11 +93,20 @@ header {
   background-color: black;
 
   a {
-    font-size: 38px;
+    font-size: clamp(1.5rem, 1.1757rem + 1.6216vw, 3rem);
     text-transform: uppercase;
+    font-family: $fontBodyType;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
   }
   li {
     position: relative;
@@ -136,17 +145,53 @@ nav ul {
   height: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 
   h1 {
     text-transform: uppercase;
     font-family: $fontHeadingType;
     font-size: $fontMedium;
+    display: flex;
+    text-align: center;
     color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    stroke: black;
+    padding-bottom: 30px;
     border-bottom: goldenrod solid 4px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    font-size: clamp(1.5rem, 1.0676rem + 2.1622vw, 3.5rem);
+    text-align: center;
+  }
+}
+// scroll icon
+
+.scrollup {
+  position: fixed;
+  border-radius: 50%;
+  bottom: 55px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  cursor: pointer;
+
+  i {
+    font-size: 60px;
+    border: 5px solid black;
+    opacity: 1;
+    position: fixed;
+    border-radius: 50%;
+    bottom: 55px;
+    right: 10px;
+    display: flex;
+    color: goldenrod;
+    width: 65px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -162,4 +207,35 @@ nav ul {
 }
 .open {
   display: flex;
+}
+
+.bottomHeader {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 200px;
+  left: 50%;
+
+  .scrolldown {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+  }
+
+  i {
+    font-size: clamp(3rem, 2.027rem + 4.8649vw, 7.5rem);
+  }
+  i:hover {
+    color: goldenrod;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1325px) {
+  header {
+    height: 70vh;
+  }
+
+  .bottomHeader {
+    display: none;
+  }
 }
