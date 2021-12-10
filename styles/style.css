@@ -694,15 +694,9 @@ h2 {
   padding: 5%;
 }
 
-.skillsDev:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}
-
 .skillsDev {
   width: 100%;
   height: 100%;
-  background-color: white;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,7 +712,6 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: goldenrod 10px solid;
   padding: 60px 0;
 }
 .skillsDev h2 {
@@ -745,8 +738,10 @@ h2 {
           justify-content: center;
 }
 .skillsDev ul li {
-  min-width: 20%;
-  max-width: 20%;
+  min-width: 300px;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 25px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,10 +757,14 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 1%;
+  background-color: white;
+  border: solid gold 4px;
 }
 .skillsDev ul li:hover {
   color: goldenrod;
   cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 .skillsDev ul p {
   font-size: 28px;
